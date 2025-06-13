@@ -200,7 +200,7 @@ header {
 .contact-info {
   position: fixed;
   top: 10px;
-  left: 10px;
+  right: 10px;
   background-color: rgba(0, 170, 255, 0.9); /* Fondo azul semitransparente acorde a header */
   color: #FFD700; /* Dorado */
   padding: 8px 12px;
