@@ -193,6 +193,10 @@ footer {
   margin-top: 2em;
 }
 
+header {
+  position: relative;
+}
+
 .contact-info {
   position: fixed;
   top: 10px;
