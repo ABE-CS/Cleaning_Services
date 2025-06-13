@@ -8,10 +8,6 @@
 
   <meta name="google-site-verification" content="Dn-z65Ls4fuUt4RXy9CaTD0O6Z-U645aPDZwrirT9mI" />
 
-
-  <!-- Google site verification -->
-  
-
   <!-- SEO -->
   <meta name="description" content="ABE Cleaning Services offers professional commercial and residential cleaning with over 10 years of experience. Clean spaces, happy clients." />
   <meta name="keywords" content="cleaning services, office cleaning, residential cleaning, deep disinfection, professional cleaning, ABE Cleaning Services" />
@@ -22,14 +18,23 @@
   <meta property="og:description" content="Professional cleaning solutions for homes and businesses in the U.S." />
   <meta property="og:url" content="https://abe-cs.github.io/Cleaning_Services/" />
   <meta property="og:type" content="website" />
-  <!-- Optional: replace with your own image URL -->
   <meta property="og:image" content="https://abe-cs.github.io/Cleaning_Services/images/your-image.jpg" />
 
-  <!-- Favicon (optional) -->
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
-
-  <!-- CSS -->
   <link rel="stylesheet" href="styles.css" />
+
+  <style>
+    body { font-family: Arial, sans-serif; background: #f5f5f5; color: #333; margin: 0; padding: 0; }
+    header { background-color: #007B8A; color: white; padding: 20px; text-align: center; }
+    nav ul { list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; gap: 20px; }
+    nav a { color: white; text-decoration: none; font-weight: bold; }
+    section { padding: 30px; max-width: 1000px; margin: auto; background: white; margin-top: 20px; border-radius: 10px; }
+    .hero { text-align: center; background-color: #e0f7fa; padding: 40px 20px; border-radius: 10px; }
+    .services ul { list-style: disc; padding-left: 20px; }
+    .contact form { display: flex; flex-direction: column; gap: 10px; }
+    .btn-wsp { background-color: #25D366; color: white; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; }
+    footer { background: #007B8A; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+  </style>
 </head>
 <body>
   <header>
@@ -37,8 +42,8 @@
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Us</a></li>
         <li><a href="#contacto">Contact</a></li>
       </ul>
     </nav>
@@ -49,7 +54,7 @@
     <p>Trust our experts to provide a clean and healthy environment.</p>
   </section>
 
-  <section class="services">
+  <section class="services" id="services">
     <h2>Our Services</h2>
     <ul>
       <li>Office Cleaning</li>
@@ -59,9 +64,15 @@
     </ul>
   </section>
 
-  <section class="about">
+  <section class="about" id="about">
     <h2>About Us</h2>
-    <p>We are a company with over 10 years of experience in the cleaning industry, committed to quality and customer service.</p>
+    <p>We are a company with over 10 years of experience in the cleaning industry, committed to quality and customer service. We take pride in offering eco-friendly and effective cleaning solutions to meet the unique needs of each client.</p>
+  </section>
+
+  <section class="testimonials">
+    <h2>Testimonials</h2>
+    <p>"Excellent service. Very reliable and professional." – Maria G.</p>
+    <p>"Left my apartment spotless. Highly recommended!" – John R.</p>
   </section>
 
   <section class="contact" id="contacto">
@@ -76,7 +87,6 @@
       <label for="mensaje">Message:</label>
       <textarea id="mensaje" name="message" rows="4" required></textarea>
 
-      <!-- Redirect after submission -->
       <input type="hidden" name="_next" value="https://abe-cs.github.io/Cleaning_Services/thanks.html" />
       
       <button type="submit">Send</button>
