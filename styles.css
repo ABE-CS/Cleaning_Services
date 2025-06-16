@@ -36,7 +36,7 @@ nav ul li a {
   background-repeat: no-repeat;
   padding: 4em 2em;
   text-align: center;
-  color: white; /* Asegura contraste con el fondo */
+  color: rgb(4, 4, 4); /* Asegura contraste con el fondo */
 }
 
 .services, .about, .contact {
