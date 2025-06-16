@@ -30,9 +30,13 @@ nav ul li a {
 }
 
 .hero {
-  background-color: #e0f7fa;
-  padding: 2em;
+  background-image: url("img/hero.jpg"); /* Asegúrate de tener esta imagen en tu carpeta /img */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 4em 2em;
   text-align: center;
+  color: white; /* Asegura contraste con el fondo */
 }
 
 .services, .about, .contact {
