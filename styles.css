@@ -30,13 +30,27 @@ nav ul li a {
 }
 
 .hero {
-  background-image: url("img/hero.jpg"); /* Asegúrate de tener esta imagen en tu carpeta /img */
+  position: relative;
+  background-image: url("img/hero.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 4em 2em;
+  padding: 6em 2em;
   text-align: center;
-  color: rgb(4, 4, 4); /* Asegura contraste con el fondo */
+  color: #000;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Capa blanca transparente encima de la imagen */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5); /* blanco semi-transparente */
+  z-index: -1;
 }
 
 .services, .about, .contact {
